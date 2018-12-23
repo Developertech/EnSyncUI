@@ -3,23 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 
 import { MDBSpinningPreloader, MDBBootstrapModulesPro, ToastModule } from 'ng-uikit-pro-standard';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    EmployeeListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule,
+    HttpModule,
     ToastModule.forRoot(),
     MDBBootstrapModulesPro.forRoot(),
     AgmCoreModule.forRoot({
